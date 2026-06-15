@@ -213,6 +213,48 @@
     </main>
 
     <div style="height: 50px;"></div>
+<!-- 우측 하단 플로팅 버튼 -->
+<a href="https://sscoaching.co.kr/ssc/marketing/sangsangLanding?code=3240340_H"
+   target="_blank"
+   class="floating-btn">
+    상담
+</a>
 
+<style>
+.floating-btn {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 65px;
+    height: 65px;
+    background: #e63946;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    z-index: 999999;
+    transition: all 0.2s ease;
+}
+
+.floating-btn:hover {
+    transform: scale(1.08);
+    background: #d62839;
+}
+
+@media (max-width: 768px) {
+    .floating-btn {
+        width: 58px;
+        height: 58px;
+        font-size: 13px;
+        right: 15px;
+        bottom: 15px;
+    }
+}
+</style>
 </body>
 </html>
