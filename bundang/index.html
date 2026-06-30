@@ -12,10 +12,94 @@
     </header>
 
     <nav style="text-align: center; padding: 15px; background-color: #fff; border-bottom: 2px solid #e63946;">
-        <a href="/" style="margin: 0 10px; text-decoration: none; color: #333; font-weight: bold;">홈</a>
-        <a href="/gangnam/" style="margin: 0 10px; text-decoration: none; color: #333; font-weight: bold;">강남 수학과외</a>
-        <a href="/bundang/" style="margin: 0 10px; text-decoration: none; color: #333; font-weight: bold;">분당 수학과외</a>
-        <a href="/wirye/" style="margin: 0 10px; text-decoration: none; color: #333; font-weight: bold;">위례 영어과외</a>
+<nav class="top-menu">
+  <a href="/">홈</a>
+
+  <div class="menu-item">
+  <div class="menu-item">
+    <a href="/seodaemun/">분당 수학과외</a>
+
+    <div class="submenu">
+     <a href="/bundang/">분당 수학과외</a>
+<a href="/bundang/gumi/">구미동 수학과외</a>
+<a href="/bundang/gungnae/">궁내동 수학과외</a>
+<a href="/bundang/geumgok/">금곡동 수학과외</a>
+<a href="/bundang/baekhyeon/">백현동 수학과외</a>
+<a href="/bundang/bundang/">분당동 수학과외</a>
+<a href="/bundang/sampyeong/">삼평동 수학과외</a>
+<a href="/bundang/seohyeon/">서현동 수학과외</a>
+<a href="/bundang/sunae/">수내동 수학과외</a>
+<a href="/bundang/yatap/">야탑동 수학과외</a>
+<a href="/bundang/unjung/">운중동 수학과외</a>
+<a href="/bundang/imae/">이매동 수학과외</a>
+<a href="/bundang/jeongja/">정자동 수학과외</a>
+<a href="/bundang/pangyo/">판교동 수학과외</a>
+
+      
+    
+    </div>
+  </div>
+     
+    </div>
+  </div>
+
+</nav>
+
+<style>
+.top-menu {
+  position: relative;
+  z-index: 99999;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+
+.top-menu > a,
+.menu-item > a {
+  display: inline-block;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.menu-item {
+  display: inline-block;
+  position: relative;
+  padding: 10px 0;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  width: 210px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  z-index: 999999;
+}
+
+.submenu a {
+  display: block;
+  padding: 12px 15px;
+  text-align: left;
+  text-decoration: none;
+  color: #333;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.submenu a:hover {
+  background: #f5f5f5;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+</style>
     </nav>
 
     <main style="max-width: 900px; margin: 0 auto; padding: 20px;">
