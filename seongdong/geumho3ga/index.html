@@ -76,14 +76,20 @@
   z-index: 999999;
 }
 
-.submenu a {
-  display: block;
-  padding: 12px 15px;
-  text-align: left;
-  text-decoration: none;
-  color: #333;
-  font-weight: normal;
-  white-space: nowrap;
+.submenu {
+  display: none;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  width: 210px;
+  max-height: 400px;      /* 원하는 높이 */
+  overflow-y: auto;       /* 세로 스크롤 */
+  overflow-x: hidden;     /* 가로 스크롤 제거 */
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  z-index: 999999;
+  scrollbar-width: thin;  /* Firefox */
 }
 
 .submenu a:hover {
